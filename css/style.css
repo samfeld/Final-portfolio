@@ -153,11 +153,11 @@ input {
     
   }
   .flip-card {
-    background-color: transparent;
+    background-color: #e3e0cf;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px; 
+
   }
   
   .flip-card-inner {
@@ -185,13 +185,10 @@ input {
   
   
   .flip-card-front {
-    background-color: #bbb;
     color: black;
   }
   
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
     transform: rotateY(180deg);
   }
   
