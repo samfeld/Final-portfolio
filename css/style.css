@@ -157,6 +157,7 @@ input {
     width: 300px;
     height: 200px;
     perspective: 1000px; 
+    margin: auto;
 
   }
   
@@ -174,6 +175,10 @@ input {
     transform: rotateY(180deg);
   }
   
+  .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+
+  }
 
   .flip-card-front, .flip-card-back {
     position: absolute;
@@ -342,8 +347,8 @@ footer {
         -webkit-transition: initial; /* sets to default setting */
         transition: initial; /* sets to default setting */
       }
-      .flip-card{
-          animation: none;
+      .flip-card:hover .flip-card-inner{
+          transform: none;
       }
   }
  
