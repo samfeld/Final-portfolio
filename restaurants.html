@@ -8,6 +8,7 @@
     <link href= "css/style.css" rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant"> 
     <link rel="icon" href="images/travel-guide.png">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/e7b0bf4cd2.js" crossorigin="anonymous"></script>
     <title>Restaurants</title>
 </head>
@@ -39,6 +40,7 @@
         <div class="logo">
     <h2 id="pizza">Lou Malnati's Pizza</h2>
     <img src= "images/lous_logo.jpeg" alt="Lou Malnati's logo" width="200">
+    
     <h3 class="expense">$$</h3>
     </div>
     <p>
@@ -51,7 +53,8 @@
         Known for its  deep dish crust, Lou Malnati's secret crust recipe has been passed down from generation to generation.
     </p>
     <div class="restaurant_images"> 
-    <img src = "images/lous.jpeg" alt="Lous pizza view from top" width="200"/>
+        <a class="example-image-link" href="images/lous.jpeg" data-lightbox="example-1"><img class="example-image" src="images/lous.jpeg" alt="image-1" /></a>
+        <a class="example-image-link" href="images/lous.jpeg" data-lightbox="example-set"><img class="example-image" src = "images/lous.jpeg" alt="Lous pizza view from top" width="200"/></a>
     <img src = "images/lous_pull.jpeg" alt="Lous pizza being pulled" width="200"/>
 </div>
     <a id="lous_link" href="https://www.loumalnatis.com/">Visit Lou Malnati's Website</a>
@@ -239,5 +242,6 @@
 <footer>
     <p>Samantha Feldman &copy; 2022</p>
 </footer>
+<script src="dist/js/lightbox.js"></script>
 </body>
 </html>
