@@ -288,6 +288,7 @@ a.skip:focus, a.skip:active {
     overflow:auto;
     text-align:center;
     z-index: 999;
+    color: #616161;
 }
 footer {
     color: #404040;
