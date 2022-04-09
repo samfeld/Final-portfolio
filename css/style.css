@@ -237,8 +237,14 @@ input {
     padding-bottom: 20px;
   }
   #remember_id{
-      display: inline;
+    display: inline;
     padding-left:5px;
+    justify-items: center;
+    align-self: center;
+  }
+  #checkbox{
+    display: inline-block;
+      align-self: center;
   }
   #submit_button{
       width: 50px;
