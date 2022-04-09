@@ -35,11 +35,15 @@ h2{
     background-image: url("../images/background.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 432px;
+    min-height: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
-    border: 6px solid #616161;
+    border: 3px solid #d0cbaf;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #malls, #boutiques{
     background-color: #d0cbaf;
@@ -268,6 +272,8 @@ a:visited{
 }
 .restaurant_images1{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
 }
 .restaurant_images{
@@ -376,19 +382,16 @@ footer {
       }
   }
   @media screen and (max-width: 900px) {
-    .restaurant_images {
+    .restaurant_images, .restaurant_images1 {
     flex-wrap: wrap;
       justify-content: center;
       align-items: center;
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .restaurant_images {
+    .restaurant_images, .restaurant_images1 {
         flex-direction: column;
         flex-wrap: nowrap;
-
-  
     }
   }
