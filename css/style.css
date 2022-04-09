@@ -251,6 +251,7 @@ input {
     border: 3px solid #c5d5cb;
     
   }
+ 
   .waves{
       background: url("images/waves.gif");
       padding: 20px;
@@ -265,9 +266,12 @@ input {
 a:visited{
     color: #000;
 }
-#restaurant_images{
-    display: grid;
-    justify-items: center;
+.restaurant_images1{
+    display: flex;
+    justify-content: center;
+}
+.restaurant_images{
+    justify-content: center;
 }
 #lous_link{
     display:block;
@@ -371,4 +375,20 @@ footer {
           transform: none;
       }
   }
- 
+  @media screen and (max-width: 900px) {
+    .restaurant_images {
+    flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .restaurant_images {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+  
+    }
+  }
