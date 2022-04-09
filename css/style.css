@@ -380,6 +380,10 @@ footer {
       .flip-card:hover .flip-card-inner{
           transform: none;
       }
+      #main_page{
+        background-attachment: scroll;
+      }
+      
   }
   @media screen and (max-width: 900px) {
     .restaurant_images, .restaurant_images1 {
