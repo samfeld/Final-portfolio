@@ -164,16 +164,7 @@ li:hover {
   text-align: center;
   
 }
-input {
-    width: 95%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: content-box;
-    
-  }
+
   .flip-card {
     background-color: #e3e0cf;
     width: 300px;
@@ -226,10 +217,23 @@ input {
     align-items: center;
     justify-content: center;
   }
+
+  input {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: content-box;
+    
+  }
   textarea{
-      width: 95%;
-      height: 150px;
+      width: 582px;
+      height:184px;
       padding: 12px 20px;
+      display: flex;
+      margin:auto;
   }
   #phone_format{
       font-size: 0.75rem;
@@ -240,11 +244,15 @@ input {
     display: flex;
     margin: auto;
       justify-self: center;
+      padding: 12px 20px;
   }
   #checkbox{
     display: flex;
     margin: auto;
       justify-self: center;
+  }
+  #remember{
+      padding: 15px;
   }
   #submit_button{
       width: 50px;
