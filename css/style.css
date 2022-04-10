@@ -48,6 +48,10 @@ h2{
 #malls, #boutiques{
     background-color: #d0cbaf;
 }
+#acai_section, #restaurant_section{
+    margin-top:20px;
+    background-color: #d0cbaf;
+}
 .parallax {
     background-image: url("../images/background.jpeg");
     min-height: 432px;
