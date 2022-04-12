@@ -85,7 +85,7 @@ img{
     text-align: center;
 
   }
-#resize-img, #chicago{
+.resize-img, #chicago{
     width: 300px;
 }
 img:nth-child(even):hover{
