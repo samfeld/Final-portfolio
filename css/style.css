@@ -298,12 +298,13 @@ a:visited{
     /* flex-wrap: wrap;
     flex-direction: row;*/
     justify-content: center; 
+    align-items: center;
 }
 .restaurant_images{
     /* display: flex; */
     justify-content: center;
 }
-#lous_link{
+#lous_link, #blufish_link, #portillos_link, #guildhall_link, #disotto_link, #hampton_link, #spirit_link, #deerpathlink, #hometown_link, #foodstuffs_link, #bright_link, #lolos_link, #lf_link{
     display:block;
     z-index: 1;
 }
@@ -392,7 +393,17 @@ footer {
     }
     }
 
-
+    @media screen and (min-width: 425px) {
+        .restaurant_images1 {
+           flex-direction: column;
+           flex-wrap: nowrap;
+       }
+       .trails_images_container{
+           grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+           grid-template-columns: 1fr 1fr;
+           justify-items: center;
+       }
+     }
   @media screen and (prefers-reduced-motion){
       #chicago{
           animation: none;
@@ -409,11 +420,17 @@ footer {
       }
       
   }
-  @media screen and (max-width: 1000px) {
+  .trails_images_container{
+    grid-template-columns: 1fr ;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 725px) {
     .restaurant_images1 {
     flex-wrap: wrap;
     flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       align-content: center;
     }
@@ -424,24 +441,6 @@ footer {
     }
   }
   
-  @media screen and (max-width: 725px) {
-     .restaurant_images1 {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .trails_images_container{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
-  }
+  
 
-  @media screen and (max-width: 425px){
-      .trails_images_container{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr ;
-        align-items: center;
-        justify-items: center;
-      }
-    
-  }
+  
