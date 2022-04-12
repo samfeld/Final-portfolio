@@ -377,7 +377,23 @@ footer {
         padding: 10px;
     }
     }
-
+   
+    @media screen and (prefers-reduced-motion: reduce){
+        #chicago{
+            animation: none;
+        }
+        a.skip {
+          -webkit-transition: initial; /* sets to default setting */
+          transition: initial; /* sets to default setting */
+        }
+        .flip-card:hover .flip-card-inner{
+            transform: none;
+        }
+        #main_page{
+          background-attachment: scroll;
+        }
+        
+    }
     @media screen and (min-width: 425px) {
         .restaurant_images1 {
            flex-direction: column;
@@ -388,22 +404,7 @@ footer {
            justify-items: center;
        }
      }
-  @media screen and (prefers-reduced-motion){
-      #chicago{
-          animation: none;
-      }
-      a.skip {
-        -webkit-transition: initial; /* sets to default setting */
-        transition: initial; /* sets to default setting */
-      }
-      .flip-card:hover .flip-card-inner{
-          transform: none;
-      }
-      #main_page{
-        background-attachment: scroll;
-      }
-      
-  }
+
   .trails_images_container{
     grid-template-columns: 1fr ;
     align-items: center;
@@ -424,7 +425,7 @@ footer {
         justify-items: center;
     }
   }
-  
+ 
   @media screen and (min-width: 1025px) {
 .trails_images_container{
     display: grid;
@@ -433,3 +434,4 @@ footer {
     justify-items: center;
 }
   }
+  
