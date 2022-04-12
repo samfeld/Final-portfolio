@@ -41,9 +41,9 @@ h2{
     padding-left: 0px;
     border: 3px solid #d0cbaf;
     background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #malls, #boutiques{
     background-color: #d0cbaf;
@@ -52,14 +52,6 @@ h2{
     margin-top:20px;
     background-color: #d0cbaf;
 }
-.parallax {
-    background-image: url("../images/background.jpeg");
-    min-height: 432px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
 #north-shore-recap{
     margin: 20px;
