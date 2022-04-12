@@ -21,7 +21,8 @@ main{
     padding: 10px;
 }
 h1{
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: 3.5rem; 
 	font-weight: bold;
     text-align: center;
     margin: 20px;
@@ -73,7 +74,8 @@ h2:hover{
 }
 
 h3{
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size:2.2rem;
     padding-bottom: 5px;
 }
 p{
@@ -91,7 +93,7 @@ img{
     text-align: center;
 
   }
-#resize-img{
+#resize-img, #chicago{
     width: 300px;
 }
 img:nth-child(even):hover{
@@ -112,7 +114,9 @@ img:nth-child(even):hover{
 
 .trails_images_container{
     display: grid;
-    grid-template: repeat(auto-fit, minmax(200px, 1fr))/repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template: repeat(auto-fit, minmax(200px, 1fr))/repeat(auto-fit, minmax(200px, 1fr)); */
     padding:10px;
 }
 
@@ -141,7 +145,7 @@ ul {
 li {
     text-transform: uppercase;
     font-family: 'Varela Round', sans-serif;
-    font-size: 14px;
+    font-size: 14px; 
     display: inline-block;
     margin: 20px; 
   }
@@ -291,11 +295,12 @@ a:visited{
 }
 .restaurant_images1{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-wrap: wrap;
+    flex-direction: row;*/
+    justify-content: center; 
 }
 .restaurant_images{
+    /* display: flex; */
     justify-content: center;
 }
 #lous_link{
@@ -364,7 +369,7 @@ footer {
     body{
         font-family: "Assistant", 'Varela Round', sans-serif;
     }
-    #Chicago {
+    #chicago {
         animation: chicago 5s;
     }
     #north-shore{
@@ -389,7 +394,7 @@ footer {
 
 
   @media screen and (prefers-reduced-motion){
-      #Chicago{
+      #chicago{
           animation: none;
       }
       a.skip {
@@ -404,17 +409,39 @@ footer {
       }
       
   }
-  @media screen and (max-width: 900px) {
-    .restaurant_images, .restaurant_images1 {
+  @media screen and (max-width: 1000px) {
+    .restaurant_images1 {
     flex-wrap: wrap;
+    flex-direction: row;
       justify-content: center;
       align-items: center;
+      align-content: center;
+    }
+    .trails_images_container{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .restaurant_images, .restaurant_images1 {
+  @media screen and (max-width: 725px) {
+     .restaurant_images1 {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    .trails_images_container{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+      .trails_images_container{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
+        align-items: center;
+        justify-items: center;
+      }
+    
   }
