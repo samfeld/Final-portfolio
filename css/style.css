@@ -112,13 +112,6 @@ img:nth-child(even):hover{
     margin: 15px;
 }
 
-.trails_images_container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding:10px;
-    justify-items: center;
-}
 
 img:hover{
     opacity: 0.5;
@@ -399,7 +392,6 @@ footer {
            flex-wrap: nowrap;
        }
        .trails_images_container{
-           grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
            grid-template-columns: 1fr 1fr;
            justify-items: center;
        }
@@ -443,4 +435,11 @@ footer {
   
   
 
-  
+  @media screen and (min-width: 1025px) {
+.trails_images_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:10px;
+    justify-items: center;
+}
+  }
