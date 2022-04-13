@@ -378,22 +378,7 @@ footer {
     }
     }
    
-    @media screen and (prefers-reduced-motion: reduce){
-        #chicago{
-            animation: none;
-        }
-        a.skip {
-          -webkit-transition: initial; /* sets to default setting */
-          transition: initial; /* sets to default setting */
-        }
-        .flip-card:hover .flip-card-inner{
-            transform: none;
-        }
-        #main_page{
-          background-attachment: scroll;
-        }
-        
-    }
+
     @media screen and (min-width: 425px) {
         .restaurant_images1 {
            flex-direction: column;
@@ -434,4 +419,20 @@ footer {
     justify-items: center;
 }
   }
-  
+  @media screen and (prefers-reduced-motion: reduce){
+    #chicago{
+        animation: none;
+    }
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+    .flip-card:hover .flip-card-inner, .flip-card:focus{
+        transform: none;
+    }
+
+    #main_page{
+      background-attachment: scroll;
+    }
+    
+}
