@@ -31,6 +31,7 @@ h1{
 h2{
     font-size: 25px;
 }
+
 #main_page{
     background-image: url("../images/background.jpeg");
     background-repeat: no-repeat;
@@ -40,10 +41,6 @@ h2{
     padding-bottom: 20px;
     padding-left: 0px;
     border: 3px solid #d0cbaf;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #malls, #boutiques{
     background-color: #d0cbaf;
@@ -389,6 +386,12 @@ footer {
        .trails_images_container{
            grid-template-columns: 1fr 1fr;
            justify-items: center;
+       }
+       #main_page{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
        }
      }
 
