@@ -268,7 +268,9 @@ li:hover {
       background: url("images/waves.gif");
       padding: 20px;
       border: none;
-    
+  }
+  .still{
+      display:none;
   }
 
   #click_here{
@@ -434,5 +436,10 @@ footer {
     #main_page{
       background-attachment: scroll;
     }
-    
+    .still{
+        display:block;
+    }
+    .gif{
+        display:none;
+    }
 }
